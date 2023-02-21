@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://127.0.0.1:5500/First%20Website/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Me</title>
+</head>
+<body>
+
+    <!-- contains every single word and picture the visitor will encounter -->
+
+    <header>
+        <!-- headers show the logo and page titles -->
+        <img src="/img/154622.svg" alt="Black silhouette cardinal" width="250" height="250">
+
+        <h1>Web Dev I</h1>
+
+    </header>
+
+    <main>
+        <!-- Important content direclty related to the cnetrak topic of the document -->
+
+        <section>
+            <!-- Hero section, shows image, name, and location -->
+            <img src="/img/avataaars.png" alt="Angelo Avatar" width="250" height="250">
+            
+            <div>
+                <p>Angelo Martino</p>
+                <p>Watchung, NJ</p>
+                <p>Web Developer</p>
+            </div>
+            <!-- End of Hero section -->
+        </section>
+
+        <section>
+
+            <!-- Bio section, Personal info but not too personal-->
+
+            <div>
+
+                <p>Angelo's List of Desires...</p>
+
+                <ul>
+                    <li>To be famous</li>
+                    <li>To be rich</li>
+                    <li>End world hunger</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h1>Hello World!</h1>
+
+            <h2>Hello my name is Angelo</h2>
+
+            <!-- Headers begin your paragraphs with a broad title for better organization -->
+
+                <p>Things that Angelo enjoys...</p>
+
+                <ul>
+                    <li>Beach fishing</li>
+                    <li>Making money</li>
+                    <li>Playing video games</li>
+                    <li>Making new friends</li>
+                    <li>Favorite song: Drowning, A Boogie wit da Hoodie</li>
+                </ul>
+
+            <h2>Drowning</h2>
+    
+                <p>
+                    Wrist so icy, wonder why she like me, bitch I'm drownin'<br>
+                    In water, I just bought a Cuban, dipped it in a fountain.<br>
+                    Every where that I go it's a light show I'm surrounded.<br>
+                    Bust down, bust down, bust down, bust down, bust down, bitch I'm downin'.
+
+                </p>
+
+                <p>- Julius &amp; Dubose, Dieuson</p>
+
+                <p>© © 2017, Angelo Martino</p>
+
+        </section>
+
+    </main>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
