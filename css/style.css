@@ -1,0 +1,159 @@
+header {
+    text-align: center;
+    color: #B499FF;
+    font-size: 250%;
+
+    font-family: 'Space Mono';
+
+}
+
+body {
+
+    text-align: center;
+    background-image: url(/img/circuit.jpg); 
+    background-repeat: no-repeat;
+    background-position: bottom;
+    backdrop-filter: blur(7px);
+    background-size: cover;
+    color: #8efff6;
+    font-family: 'Space Mono';
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+
+#Bio {
+    font-family: 'Space Mono';
+    background-image: url(/img/matrix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    box-shadow: 10px 10px 14px 5px rgb(42, 66, 64);
+    border: 6px solid rgb(116, 255, 241);
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+}
+
+#Hobbies {
+    font-family: 'Space Mono';
+
+    box-shadow: 10px 10px 14px 5px rgb(42, 66, 64);
+    text-align: center;
+    text-align: justify;
+    box-shadow: black;
+    border-style: dashed;
+    border: 6px solid rgb(116, 255, 241);
+    background-color: rgb(40, 40, 40);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 500px;
+    inline-size: 335px;
+
+}
+
+#Gallery {
+    font-family: 'Space Mono';
+
+    text-align: justify;
+    box-shadow: 10px 10px 14px 5px rgb(42, 66, 64);
+    border-style: dashed;
+    border: 6px solid rgb(116, 255, 241);
+    background-color: rgb(40, 40, 40);
+    text-align: left;
+    margin-left: auto;
+    margin-right: 700px;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 650px;
+    display: grid;
+
+}
+
+#Blog {
+    font-family: 'Space Mono';
+
+    text-align: justify;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#Contact {
+    font-family: 'Space Mono';
+    text-align: center;
+    border: 6px solid rgb(116, 255, 241);
+    box-shadow: 10px 10px 14px 5px rgb(42, 66, 64);
+    background-color: rgb(40, 40, 40);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    max-height: 650px;
+    
+}
+
+#Caption {
+    font-family: 'Space Mono';
+
+    text-align: left;
+}
+
+.enlarge:hover {
+    transform: scale(1.3);
+    transform-origin: center bottom;
+}
+
+.zoom {
+    margin: 30px;
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.3);
+    /* IE 9 */
+    -webkit-transform: scale(1.3);
+    /* Safari 3-8 */
+    transform: scale(1.3);
+}
+
+#center {
+    text-align: center;
+}
+
+label, input {
+    display: block;
+    flex-direction: column;
+
+}
+
+#form {
+    padding-left: 150px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
