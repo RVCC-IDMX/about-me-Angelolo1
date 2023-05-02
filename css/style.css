@@ -57,52 +57,177 @@ body {
 
 }
 
+
 #Gallery {
     font-family: 'Space Mono';
 
     text-align: justify;
     box-shadow: 10px 10px 14px 5px rgb(42, 66, 64);
-    border-style: dashed;
+    border-style: solid;
     border: 6px solid rgb(116, 255, 241);
     background-color: rgb(40, 40, 40);
-    text-align: left;
+    text-align: center;
     margin-left: auto;
-    margin-right: 700px;
+    margin-right: auto;
     margin-top: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 25px;
     padding-right: 25px;
-    max-width: 650px;
+    max-width: auto;
     display: grid;
 
 }
+
+@media screen and (min-width: 768px) {
+
+    #Gallery figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #Gallery figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Blog div {
+        max-width: 100%;
+        columns: 30rem;
+        text-align: justify;
+    }
+
+    
+}
+
 
 #Blog {
     font-family: 'Space Mono';
 
     text-align: justify;
+    box-shadow: 10px 10px 14px 5px rgb(42, 66, 64);
+    border-style: solid;
+    border: 6px solid rgb(116, 255, 241);
+    background-color: rgb(40, 40, 40);
     text-align: center;
     color: whitesmoke;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: auto;
 }
 
+#video {
+    font-family: 'Space Mono';
+    background-image: url(/img/matrix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    box-shadow: 10px 10px 14px 5px rgb(42, 66, 64);
+    border: 6px solid rgb(116, 255, 241);
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 555px;
+    max-height: auto;
+    
+}
+
+/*
 #Contact {
     font-family: 'Space Mono';
     text-align: center;
-    border: 6px solid rgb(116, 255, 241);
+    border: 7px solid rgb(116, 255, 241);
     box-shadow: 10px 10px 14px 5px rgb(42, 66, 64);
     background-color: rgb(40, 40, 40);
     margin-left: auto;
     margin-right: auto;
-    max-width: 200px;
-    max-height: 650px;
-    
+    max-width: 650px;
+    max-height: 675px;
 }
+*/
+
+#Contact fieldset {
+    border: 20px solid rgb(116, 255, 241);
+    padding: 1ex;
+    border-radius: 1ex;
+    background-image: url(/img/waves.jpg);
+    background-repeat: repeat;
+    display:flex;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+#Contact fieldset input[type=text],
+#Contact fieldset input[type=email],
+#Contact fieldset input[type=tel] {
+    width: 100%;
+}
+
+#Contact fieldset input[type=submit] {
+    display:block;
+    width:50%;
+    margin:0px auto;
+    text-align:center;
+}
+
+
+
+
+#Contact legend {
+    background-color: rgb(40, 40, 40);
+    color:rgb(116, 255, 241);
+    padding: 1ex;
+    border-bottom-right-radius: 1ex;
+    border-top-left-radius: 1ex;
+}
+
+#Contact fieldset {
+    display: grid;
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+
+#Contact label {
+    margin: 1ex;
+}
+
+#Contact fieldset fieldset {
+    grid-template-columns: 30px auto;
+}
+
+
 
 #Caption {
     font-family: 'Space Mono';
 
-    text-align: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .enlarge:hover {
@@ -157,3 +282,4 @@ div.gallery {
     padding: 15px;
     text-align: center;
   }
+
