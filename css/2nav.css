@@ -1,0 +1,64 @@
+/* make scrolling smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* 
+ get rid of padding & sizing on body so
+ header is at top
+*/
+body {
+    box-sizing: border-box;
+    border: rgb(116, 255, 241);
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links b {
+    text-decoration: none;
+    padding: 0.5%;
+}
+
+.navbar-links b:hover,
+.navbar-links b:focus {
+    color: whitesmoke;
+    background-color: #454545;
+    border-radius: 10px;
+    outline: none;
+    filter: invert(1);
+}
+
+
+/* add some padding back to rest of page */
+main {
+    padding: 2vw;
+}
+
+.navbar-links b {
+    background-color: #454545;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0px;
+    border: 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 6vw;
+    width: 6vw;
+    size: 2px;
+}
+
+.logo h1 {
+    font-size: 2em;
+}
+
+
